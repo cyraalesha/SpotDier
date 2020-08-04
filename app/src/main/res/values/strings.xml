@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SpotDier</string>
+    <string name="title_activity_locationpage">Map</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font></font>
+<!--        android:fontStyle="normal"-->
+<!--        android:fontWeight="800"-->
+<!--        android:font="@font/opsone"-->
+<!--        android:color="#daefb3"/>-->
+<!--    <font-->
+<!--        android:font="@font/bloggermedium"-->
+<!--        android:fontWeight="800"-->
+<!--        android:fontStyle="normal"/>-->
+</font-family>

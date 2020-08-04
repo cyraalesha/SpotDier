@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "497836298105",
+    "firebase_url": "https://spotdier.firebaseio.com",
+    "project_id": "spotdier",
+    "storage_bucket": "spotdier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497836298105:android:fe8708235539a9b9d1e9a8",
+        "android_client_info": {
+          "package_name": "com.example.spotdier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497836298105-hiic8nr4e1m48kgiihe11jpppe39jkl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0Bz179M_gAznHlV78HxNL4gkr6Z3mPUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497836298105-hiic8nr4e1m48kgiihe11jpppe39jkl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
