@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">SpotDier</string>
     <string name="title_activity_locationpage">Map</string>
+    <string-array name="types">
+        <item>Soldiers</item>
+        <item>Air Force</item>
+        <item>Navy</item>
+    </string-array>
 </resources>

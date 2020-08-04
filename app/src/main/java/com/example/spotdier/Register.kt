@@ -3,9 +3,14 @@ package com.example.spotdier
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_loginpage.*
 import kotlinx.android.synthetic.main.activity_register.*
+import kotlinx.android.synthetic.main.activity_register.password
+import kotlinx.android.synthetic.main.activity_register.username
 
 class Register : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -17,6 +22,18 @@ class Register : AppCompatActivity() {
 
         //btn_signup.setOnClickListener(
         //signUpUser()
+
+        val btn_login = findViewById<Button>(R.id.back_to_login)
+
+        btn_login.setOnClickListener {
+            val intent = Intent(this, loginpage::class.java)
+
+
+            intent.putExtra("name", "nullText")
+
+            startActivity(intent)
+        }
+
         btn_signup.setOnClickListener {
             signUpUser()
         }
@@ -50,8 +67,21 @@ class Register : AppCompatActivity() {
                     user!!.sendEmailVerification()
                         .addOnCompleteListener { task ->
                             if (task.isSuccessful) {
-                                startActivity(Intent(this, loginpage::class.java))
-                                finish()
+                                val city = findViewById<EditText>(R.id.city)
+                                val job = findViewById<EditText>(R.id.job)
+                                val name = findViewById<EditText>(R.id.name)
+
+                                val cityText = city.text.toString()
+                                val jobText = job.text.toString()
+                                val nameText = name.text.toString()
+
+                                val intent = Intent(this, loginpage::class.java)
+
+                                intent.putExtra("job", jobText)
+                                intent.putExtra("name", nameText)
+                                intent.putExtra("city", cityText)
+                                intent.putExtra("reportScore", "0")
+                                startActivity(intent)
                             }
                         }
 
